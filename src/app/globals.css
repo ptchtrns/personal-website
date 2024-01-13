@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+  @apply font-black text-4xl md:text-6xl text-balance;
+}
+
+h2{
+  @apply font-black text-3xl md:text-4xl text-balance;
+}
+
+h3{
+  @apply font-semibold text-xl md:text-2xl text-balance;
+}
+
+.btn{
+  @apply inline-block font-light px-12 py-3 rounded-2xl text-lg transition ease-in-out delay-100 hover:drop-shadow-2xl;
+}
+
+.btn-green{
+  @apply bg-green;
+}
+
+.blurred-dots-background{
+  @apply absolute w-auto;
+  z-index: -10;
+}
+
+.hello-world {
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.work-element {
+  position: relative; /* Ensure the .work-element is a positioned container */
+}
+
+.work-element-image {
+  transition: filter 0.5s; /* Add a transition for a smooth effect */
+}
+
+.work-element:hover .work-element-image {
+  filter: brightness(90%);
+}
+
+.work-element-title {
+  position: relative; /* Ensure the .work-element is a positioned container */
+}
+
+.work-element:hover {
+  animation: none; /* Disable the fade animation on hover */
+}
+
+.work-element-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 8px;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+  @apply bg-green;
+  z-index: -5;
+}
+
+.work-element:hover .work-element-title::before {
+  transform: scaleX(1); /* Expand the line on hover */
+}
+
+.work-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.work-scroll{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
