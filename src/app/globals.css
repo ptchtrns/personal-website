@@ -2,20 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: only light;
+}
+
 h1{
-  @apply font-black text-4xl md:text-6xl text-balance;
+  @apply font-black text-3xl sm:text-4xl md:text-6xl text-balance;
 }
 
 h2{
-  @apply font-black text-3xl md:text-4xl text-balance;
+  @apply font-black text-2xl sm:text-3xl md:text-4xl text-balance;
 }
 
 h3{
-  @apply font-semibold text-xl md:text-2xl text-balance;
+  @apply font-semibold text-lg sm:text-xl md:text-2xl text-balance;
 }
 
 .btn{
-  @apply inline-block font-light px-12 py-3 rounded-2xl text-lg transition ease-in-out delay-100 hover:drop-shadow-2xl;
+  @apply inline-block font-light px-12 py-3 rounded-lg text-base md:text-lg transition ease-in-out delay-100 hover:drop-shadow-2xl;
 }
 
 .btn-green{
@@ -65,7 +69,7 @@ h3{
   position: absolute;
   display: block;
   width: 100%;
-  height: 8px;
+  height: 3px;
   bottom: 0;
   left: 0;
   transform: scaleX(0);
@@ -79,11 +83,54 @@ h3{
   transform: scaleX(1); /* Expand the line on hover */
 }
 
-.work-scroll::-webkit-scrollbar {
-  display: none;
-}
-
 .work-scroll{
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.project-element {
+  position: relative; /* Ensure the .project-element is a positioned container */
+}
+
+.project-element-image {
+  transition: filter 0.5s; /* Add a transition for a smooth effect */
+}
+
+.project-element:hover .project-element-image {
+  filter: brightness(90%);
+}
+
+.project-element-title {
+  position: relative; /* Ensure the .project-element is a positioned container */
+}
+
+.project-element:hover {
+  animation: none; /* Disable the fade animation on hover */
+}
+
+.project-element-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+  @apply bg-green;
+  z-index: -5;
+}
+
+.project-element:hover .project-element-title::before {
+  transform: scaleX(1); /* Expand the line on hover */
+}
+
+.form-input{
+  @apply text-lg font-light border-neutral-400 border-2 rounded-lg px-6 py-3 block w-full;
 }

@@ -97,7 +97,7 @@ export default function Work() {
         // Default value for other breakpoints
         setScrollAmount(prevScrollAmount => {
           console.log(prevScrollAmount); // Log the previous value
-          return 315+48;
+          return 263.25+48;
         });
       }
     };
@@ -121,7 +121,7 @@ export default function Work() {
   }, []);
   return (
     <div className="">
-      <h2 className="px-8 lg:px-12">My work</h2>
+      <h2 className="px-8 lg:px-12">Showcase</h2>
       <div className="relative">
         {isScrollable && (
           <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-center w-[40px] h-full">
@@ -130,27 +130,10 @@ export default function Work() {
             </button>
           </div>
         )}
-        <div className="overflow-x-scroll mb-12 work-scroll px-8 lg:px-12" ref={navRef}>
+        <div className="overflow-x-scroll mb-12 work-scroll scroll-hide px-8 lg:px-12" ref={navRef}>
           <div className="flex mt-4 mb-2">
             {works.map((work) => (
-              <span key={"date-"+work.key} className="min-w-[315px] lg:min-w-[405px] h-[270px] 2xl:min-w-[540px] mr-12 inline-block text-center h-auto text-neutral-600 font-light">{work.date}</span>
-            ))}
-          </div>
-          <div className="flex mb-8">
-            {works.map((work, index) => (
-              <div key={work.key} className="flex">
-              {index === 0 && (
-                <div className="w-[157.5px] lg:w-[202.5px] 2xl:w-[270px] h-[2px] bg-green inline-block mt-[4px]"></div>
-              )}
-                <div className="inline-block">
-                  <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" className="fill-neutral-600">
-                    <circle cx="6" cy="6" r="6" />
-                  </svg>
-                </div>
-                {index !== works.length - 1 && (
-                  <div className="w-[calc(315px+3rem-10px)] lg:w-[calc(405px+3rem-10px)] 2xl:w-[calc(540px+3rem-10px)] h-[2px] bg-green inline-block mt-[4px]"></div>
-                )}
-              </div>
+              <span key={"date-"+work.key} className="min-w-[263.25px] lg:min-w-[405px] h-[270px] 2xl:min-w-[540px] mr-12 inline-block text-left h-auto text-neutral-600 font-light">{work.date}</span>
             ))}
           </div>
           <div className="flex">

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Mulish } from 'next/font/google'
 import './globals.css'
 
@@ -11,6 +11,11 @@ const mulish = Mulish({ subsets: ['latin'], weight: 'variable' })
 export const metadata: Metadata = {
   title: 'ptchtrns',
   description: 'a personal website',
+}
+
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: 'device-width'
 }
 
 export default function RootLayout({

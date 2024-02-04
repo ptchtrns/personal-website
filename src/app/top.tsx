@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
@@ -30,7 +31,11 @@ export default function Top () {
           </div>
         </li>
       </ul>
-      <Link href="" className="btn btn-main btn-green mt-6 mb-12">Send me a message</Link>
+      <Link href="" className="btn btn-main btn-green mt-6 mb-6">Send me a message</Link>
+      <div className="mb-12">
+        <Link href="https://github.com/ptchtrns" target="_blank" className="inline-block opacity-80 hover:opacity-90 mr-2"><Image src="/images/github.svg" height={23} width={23} alt="Github icon" /></Link>
+        <Link href="https://www.reddit.com/user/ptchtrns" target="_blank" className="inline-block opacity-80 hover:opacity-90"><Image src="/images/reddit.svg" height={23} width={23} alt="Reddit icon" /></Link>
+      </div>
     </div>
   )
 }
