@@ -4,14 +4,15 @@ import Image from 'next/image'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
 
-interface WorkElementProps {
+interface ShowcaseElementProps {
   img: string;
   href: string;
   title: string;
   text: string;
+  linkText: string;
 }
 
-const WorkElement: React.FC<WorkElementProps> = ({ img, href, title, text }) => {
+const ShowcaseElement: React.FC<ShowcaseElementProps> = ({ img, href, title, text, linkText }) => {
   return (
     <Link href={href} target="_blank" className="mr-12 inline-block work-element" rel="noopener noreferrer">
       <div className="">
@@ -21,11 +22,11 @@ const WorkElement: React.FC<WorkElementProps> = ({ img, href, title, text }) => 
         <div className="w-[263.25px] lg:w-[405px] 2xl:w-[540px] mt-8 max-w-full pr-4">
           <span className="text-xl sm:text-2xl work-element-title">{title}</span>
           <p className="font-light text-lg sm:text-xl my-4">{text}</p>
-          <button className="text-xl font-bold text-blue-800 hover:text-blue-600 transition ease-in-out duration-1000">Demo <FontAwesomeIcon icon={faLink} /></button>
+          <button className="text-xl font-bold text-blue-800 hover:text-blue-600 transition ease-in-out duration-1000">{linkText} <FontAwesomeIcon icon={faLink} /></button>
         </div>
       </div>
     </Link>
   );
 }
 
-export default WorkElement;
+export default ShowcaseElement;

@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import Top from './top'
-import Work from './work'
-import Projects from './projects'
-import Header from './header'
-import Bio from './bio'
-import Skills from './skills'
-import Contact from './contact'
+import Top from './(Components)/Top'
+import Showcases from './(Components)/Showcases'
+import Projects from './(Components)/Projects'
+import Header from './(Components)/Header'
+import Bio from './(Components)/Bio'
+import Skills from './(Components)/Skills'
+import Contact from './(Components)/Contact'
 
 function BlurredDots(){
   return(
@@ -22,7 +22,7 @@ export default function Home() {
       <main className="py-8 lg:py-12 hello-world">
         <Header />
         <Top />
-        <Work />
+        <Showcases />
         <Projects />
         <Bio />
         <Skills />

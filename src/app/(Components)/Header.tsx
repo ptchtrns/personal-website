@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
-import WorkElement from './workElement'
+import WorkElement from './ShowcaseElement'
 
 export default function Header() {
   return (

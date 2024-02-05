@@ -7,45 +7,22 @@ import Image from 'next/image'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
-import WorkElement from './workElement'
+import ShowcaseElement from './ShowcaseElement'
 
-export default function Work() {
+export default function Showcases() {
   const navRef: any = useRef();
   const [isScrollable, setIsScrollable] = useState(false);
   const [scrollAmount, setScrollAmount] = useState(315);
 
   const works = [
     {
-      key: "n4",
-      img: "https://fakeimg.pl/270x180",
-      href: "https://google.com",
-      title: "Project 4",
-      text: "Consectetur adipiscing elit, ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "June 2023"
-    },
-    {
-      key: "n3",
-      img: "https://fakeimg.pl/270x180",
-      href: "https://google.com",
-      title: "Project 3",
-      text: "Consectetur adipiscing elit, ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "June 2023"
-    },
-    {
-      key: "n2",
-      img: "https://fakeimg.pl/270x180",
-      href: "https://google.com",
-      title: "Project 2",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "October 2023"
-    },
-    {
       key: "n1",
-      img: "https://fakeimg.pl/270x180",
-      href: "https://google.com",
-      title: "Project 1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "October 2023"
+      img: "/images/showcases/weather-app.jpg",
+      href: "https://github.com/nikolzaksalpaus/weatherapp",
+      title: "Weather app",
+      text: "A simple weather application displaying conditions in five cities of the Päijät-Häme region, Finland, using the openweathermap.org API. Developed with HTML, CSS, JavaScript, jQuery, and Bootstrap.",
+      date: "November 2023",
+      linkText: "GitHub",
     },
   ]
 
@@ -139,7 +116,7 @@ export default function Work() {
           <div className="flex">
           {works.map((work) => (
             <div key={"div-"+work.key}>
-              <WorkElement img={work.img} href={work.href} title={work.title} text={work.text} />
+              <ShowcaseElement img={work.img} href={work.href} title={work.title} text={work.text} linkText={work.linkText} />
             </div>
           ))}
           </div>
