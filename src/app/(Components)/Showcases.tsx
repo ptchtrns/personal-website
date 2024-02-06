@@ -110,7 +110,7 @@ export default function Showcases() {
         <div className="overflow-x-scroll mb-12 work-scroll scroll-hide px-8 lg:px-12" ref={navRef}>
           <div className="flex mt-4 mb-2">
             {works.map((work) => (
-              <span key={"date-"+work.key} className="min-w-[263.25px] lg:min-w-[405px] h-[270px] 2xl:min-w-[540px] mr-12 inline-block text-left h-auto text-neutral-600 font-light">{work.date}</span>
+              <span key={"date-"+work.key} className="min-w-[263.25px] lg:min-w-[405px] h-[270px] 2xl:min-w-[540px] mr-12 inline-block text-left h-auto text-neutral-600 dark:text-neutral-400 font-light">{work.date}</span>
             ))}
           </div>
           <div className="flex">

@@ -1,6 +1,6 @@
 <svg width="700" height="700" viewBox="0 0 700 700" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_86_2)">
-<rect width="700" height="700" fill="white"/>
+<rect width="700" height="700" fill="none"/>
 <g filter="url(#filter0_f_86_2)">
 <circle cx="315.779" cy="244.442" r="79.2208" fill="#E51EE9"/>
 <circle cx="230.221" cy="165.221" r="79.2208" fill="#22E91E"/>
@@ -13,7 +13,7 @@
 <feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_86_2"/>
 </filter>
 <clipPath id="clip0_86_2">
-<rect width="700" height="700" fill="white"/>
+<rect width="700" height="700" fill="none"/>
 </clipPath>
 </defs>
 </svg>

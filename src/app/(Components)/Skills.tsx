@@ -26,7 +26,6 @@ export default function Skills () {
               <SkillElement name="Python" fileName="python.svg" fileAlt="Python logo" />
               <SkillElement name="MongoDB" fileName="mongodb-icon.svg" fileAlt="MongoDB logo" />
               <SkillElement name="ExpressJS" fileName="expressjs.svg" fileAlt="ExpressJS logo" />
-              <SkillElement name="SQL" fileName="mysql-icon.svg" fileAlt="MySQL logo" />
               <SkillElement name="Figma" fileName="figma.svg" fileAlt="Figma logo" />
             </div>
           </div>
@@ -35,6 +34,7 @@ export default function Skills () {
             <div className="my-3">
               <SkillElement name="C#" fileName="c-sharp.svg" fileAlt="C# logo" />
               <SkillElement name="PHP" fileName="php.svg" fileAlt="PHP logo" />
+              <SkillElement name="SQL" fileName="mysql-icon.svg" fileAlt="MySQL logo" />
             </div>
           </div>
         </div>

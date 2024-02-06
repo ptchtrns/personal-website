@@ -6,6 +6,18 @@
   color-scheme: only light;
 }
 
+::-moz-selection {
+  @apply bg-green/50 dark:bg-green-dark/50;
+}
+
+::selection {
+  @apply bg-green/50 dark:bg-green-dark/50;
+}
+
+body{
+  @apply bg-zinc-50 dark:bg-zinc-900 text-black dark:text-zinc-50;
+}
+
 h1{
   @apply font-black text-3xl sm:text-4xl md:text-6xl text-balance;
 }
@@ -24,11 +36,11 @@ img {
 }
 
 .btn{
-  @apply inline-block font-light px-12 py-3 rounded-lg text-base md:text-lg transition ease-in-out delay-100 hover:drop-shadow-2xl;
+  @apply inline-block font-light px-6 md:px-12 py-3 rounded-lg text-xl transition ease-in-out delay-100 hover:drop-shadow-2xl;
 }
 
 .btn-green{
-  @apply bg-green;
+  @apply bg-green text-black dark:bg-green-dark dark:text-white;
 }
 
 .blurred-dots-background{
@@ -80,7 +92,7 @@ img {
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
-  @apply bg-green;
+  @apply bg-green dark:bg-green-dark;
   z-index: -5;
 }
 
@@ -88,7 +100,7 @@ img {
   transform: scaleX(1); /* Expand the line on hover */
 }
 
-.work-scroll{
+.scroll-hide{
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -128,7 +140,7 @@ img {
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
-  @apply bg-green;
+  @apply bg-green dark:bg-green-dark;
   z-index: -5;
 }
 
@@ -137,7 +149,7 @@ img {
 }
 
 .form-input{
-  @apply text-lg font-light border-neutral-400 border-2 rounded-lg px-6 py-3 block w-full;
+  @apply text-xl font-light border-neutral-400 dark:border-neutral-600 border-2 rounded-lg px-6 py-3 block w-full bg-zinc-50 dark:bg-zinc-900 text-black dark:text-zinc-50;
 }
 
 .form-input:hover{

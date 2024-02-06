@@ -86,9 +86,9 @@ export default function Bio () {
   return(
     <>
       <div className="">
-        <h2 className="px-8 lg:px-12">Bio</h2>
+        <h2 className="px-8 lg:px-12">About me</h2>
         <div className="my-8">
-          <div className="mb-4 relative">
+{/*           <div className="mb-4 relative">
             {isScrollable && (
               <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-center w-[40px] h-full">
                 <button onClick={() => handleNav('left')} className="w-full h-full">
@@ -107,12 +107,12 @@ export default function Bio () {
                 </button>
               </div>
             )}
-          </div>
-          <div className="px-8 lg:px-12 text-xl font-light">
-            <p>&#128075; Hello!</p><br />
-            <p>My name is Nikolai, I'm 17 years old living in &#127467;&#127470; Finland.</p><br />
-            <p>Since the youngest age, I've been incredibly interested in technology, and that's why I started making websites.</p><br />
-            <p>write more idk wefdsgdsg</p>
+          </div> */}
+          <div className="px-8 lg:px-12 text-lg md:text-xl font-light lg:w-3/4 w-full">
+            <p>&#128075; Greetings!</p><br />
+            <p>I'm Nikolai, a 17-year-old enthusiast residing in Lahti, Finland, deeply immersed in the realm of software development.</p><br />
+            <p>Since my early years, a profound interest in technology, specifically website development, has fueled my journey. Project after project, I've honed my skills and acquired knowledge in various aspects of web development. In 2023, I took the next step in my journey by embarking on formal studies as a software developer in a vocational school in Finland.</p><br />
+            <p>If you ever need assistance with website development or have a project in mind, feel free to reach out. I'm always open to collaboration and excited to tackle new challenges together!</p>
           </div>
         </div>
       </div>

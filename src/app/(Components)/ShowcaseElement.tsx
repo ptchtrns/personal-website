@@ -22,7 +22,7 @@ const ShowcaseElement: React.FC<ShowcaseElementProps> = ({ img, href, title, tex
         <div className="w-[263.25px] lg:w-[405px] 2xl:w-[540px] mt-8 max-w-full pr-4">
           <span className="text-xl sm:text-2xl work-element-title">{title}</span>
           <p className="font-light text-lg sm:text-xl my-4">{text}</p>
-          <button className="text-xl font-bold text-blue-800 hover:text-blue-600 transition ease-in-out duration-1000">{linkText} <FontAwesomeIcon icon={faLink} /></button>
+          <button className="text-xl font-bold text-blue-800 hover:text-blue-600 dark:text-blue-600 dark:hover:text-blue-400 transition ease-in-out duration-1000">{linkText} <FontAwesomeIcon icon={faLink} /></button>
         </div>
       </div>
     </Link>

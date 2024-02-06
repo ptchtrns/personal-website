@@ -6,6 +6,7 @@ import Header from './(Components)/Header'
 import Bio from './(Components)/Bio'
 import Skills from './(Components)/Skills'
 import Contact from './(Components)/Contact'
+import Footer from './(Components)/Footer'
 
 function BlurredDots(){
   return(
@@ -27,6 +28,7 @@ export default function Home() {
         <Bio />
         <Skills />
         <Contact />
+        <Footer />
       </main>
     </>
   )
