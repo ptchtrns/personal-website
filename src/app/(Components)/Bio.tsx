@@ -110,9 +110,9 @@ export default function Bio () {
           </div> */}
           <div className="px-8 lg:px-12 text-lg md:text-xl font-light lg:w-3/4 w-full">
             <p>&#128075; Greetings!</p><br />
-            <p>I'm Nikolai, a 17-year-old enthusiast residing in Lahti, Finland, deeply immersed in the realm of software development.</p><br />
-            <p>Since my early years, a profound interest in technology, specifically website development, has fueled my journey. Project after project, I've honed my skills and acquired knowledge in various aspects of web development. In 2023, I took the next step in my journey by embarking on formal studies as a software developer in a vocational school in Finland.</p><br />
-            <p>If you ever need assistance with website development or have a project in mind, feel free to reach out. I'm always open to collaboration and excited to tackle new challenges together!</p>
+            <p>I&apos;m Nikolai, a 17-year-old enthusiast residing in Lahti, Finland, deeply immersed in the realm of software development.</p><br />
+            <p>Since my early years, a profound interest in technology, specifically website development, has fueled my journey. Project after project, I&apos;ve honed my skills and acquired knowledge in various aspects of web development. In 2023, I took the next step in my journey by embarking on formal studies as a software developer in a vocational school in Finland.</p><br />
+            <p>If you ever need assistance with website development or have a project in mind, feel free to reach out. I&apos;m always open to collaboration and excited to tackle new challenges together!</p>
           </div>
         </div>
       </div>
