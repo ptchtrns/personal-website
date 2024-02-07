@@ -20,7 +20,7 @@ function SubmitButton() {
   const { pending } = useFormStatus()
  
   return (
-    <button type="submit" className="btn btn-main btn-green mb-6 w-full">{ pending ? 'Sending data...' : 'Submit'}</button>
+    <button type="submit" className="btn btn-main btn-green mb-6 w-full" disabled={pending}>{ pending ? 'Sending data...' : 'Submit'}</button>
   )
 }
 
