@@ -1,9 +1,3 @@
-import Link from 'next/link'
-import Image from 'next/image'
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPlus } from "@fortawesome/free-solid-svg-icons"
-import WorkElement from './ShowcaseElement'
 import ProjectElement from './ProjectElement'
 
 

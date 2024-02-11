@@ -2,9 +2,6 @@
 
 import React, { useRef, useEffect, useState } from 'react';
 
-import Link from 'next/link'
-import Image from 'next/image'
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import ShowcaseElement from './ShowcaseElement'

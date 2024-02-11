@@ -36,6 +36,20 @@ const Contact = () => {
 
 function ContactInside(){
   const [formState, setFormState] = useState(initialFormState);
+  const [count, setCount] = useState(0)
+  const [countRed, setCountRed] = useState(false)
+
+  const updateCount = () => {
+    const messageInput = document.getElementById("message") as HTMLInputElement
+    if (messageInput) {
+      setCount(messageInput.value.length)
+      if(messageInput.value.length > 500){
+        setCountRed(true)
+      }else{
+        setCountRed(false)
+      }
+    }
+  }
 
   const { executeRecaptcha } = useGoogleReCaptcha();
   const handleFormSubmission = useCallback(async (formData: any) => {
@@ -74,18 +88,19 @@ function ContactInside(){
               </div>
               <div className="mb-6">
                 <label htmlFor="message" className="block w-fit">Message</label>
-                <textarea className="form-input my-1" placeholder="Type your message here" id="message" name="message" rows={6}></textarea>
+                <textarea className="form-input my-1" placeholder="Type your message here" id="message" name="message" rows={6} onChange={updateCount}></textarea>
+                <div className="w-full text-right"><span id="current" className={countRed ? 'text-red-500' : ''}>{count}</span><span id="maximum">/500</span></div>
                 <span className="text-red-700">{formState?.message}</span>
               </div>
               <SubmitButton />
-              <p className="text-lg md:text-xl font-light">
+              <p className="text-md md:text-lg font-light">
                 This site is protected by reCAPTCHA and the Google&nbsp;
                 <a href="https://policies.google.com/privacy" className="text-blue-800 hover:text-blue-600 dark:text-blue-600 dark:hover:text-blue-400 transition ease-in-out duration-1000">Privacy Policy <FontAwesomeIcon icon={faLink} /></a> and&nbsp;
                 <a href="https://policies.google.com/terms" className="text-blue-800 hover:text-blue-600 dark:text-blue-600 dark:hover:text-blue-400 transition ease-in-out duration-1000">Terms of Service <FontAwesomeIcon icon={faLink} /></a> apply.
               </p>
               {formState?.result ? (
                 <div className="top-[-28px] left-[-32px] absolute w-[calc(100%+64px)] h-[calc(100%+56px)] backdrop-blur-lg flex justify-center items-center">
-                  <p className="flex text-lg md:text-xl font-light">{formState?.result}</p>
+                  <p className="flex text-lg md:text-xl font-light px-6">{formState?.result}</p>
                 </div>
               ) : ''}
             </div>

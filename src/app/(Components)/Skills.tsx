@@ -1,4 +1,3 @@
-import Image from "next/image"
 import SkillElement from "./SkillElement"
 
 export default function Skills () {
