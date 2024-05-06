@@ -75,7 +75,7 @@ function ContactInside(){
         <h2>Contact me</h2>
         <div className="py-8">
           <form action={handleFormSubmission}>
-            <div className="w-full md:w-1/2 xl:w-1/3 relative">
+            <div className="w-full md:w-2/3 lg:w-1/2 2xl:w-1/3 relative">
               <div className="mb-3">
                 <label htmlFor="name" className="block w-fit">Your name</label>
                 <input className="form-input my-1" placeholder="Your name" id="name" name="name" />
