@@ -112,7 +112,7 @@ export default function Bio () {
           <div className="px-8 lg:px-12 text-lg md:text-xl font-light lg:w-3/4 w-full">
             <p>&#128075; Greetings!</p><br />
             <p>I&apos;m Nikolai, living in Lahti, Finland.</p><br />
-            <p>Since my early years, a profound interest in technology, specifically website development, has fueled my journey. In 2023, I took the next step in my journey by embarking on formal studies as a software developer in a vocational school. Since January 2023, I've been working on my biggest project <Link href="#projects" className="text-xl font-bold text-blue-800 hover:text-blue-600 dark:text-blue-600 dark:hover:text-blue-400 transition ease-in-out duration-1000">SimPictures <FontAwesomeIcon icon={faLink} /></Link>.</p><br />
+            <p>Since my early years, a profound interest in technology, specifically website development, has fueled my journey. In 2023, I took the next step in my journey by embarking on formal studies as a software developer in a vocational school. Since January 2023, I&apos;ve been working on my biggest project <Link href="#projects" className="text-xl font-bold text-blue-800 hover:text-blue-600 dark:text-blue-600 dark:hover:text-blue-400 transition ease-in-out duration-1000">SimPictures <FontAwesomeIcon icon={faLink} /></Link>.</p><br />
             <p>Also, I occasionally produce music under the name of <Link href="#projects" className="text-xl font-bold text-blue-800 hover:text-blue-600 dark:text-blue-600 dark:hover:text-blue-400 transition ease-in-out duration-1000">pitch transition <FontAwesomeIcon icon={faLink} /></Link>.</p>
           </div>
         </div>
